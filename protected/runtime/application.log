@@ -1,0 +1,621 @@
+2012/08/27 20:08:15 [error] [php] date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Europe/Moscow' for 'MSK/4.0/no DST' instead (/Users/Pavel/Work/PHP/skladblag.local/www/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#1 /Users/Pavel/Work/Yii/framework/web/widgets/CContentDecorator.php(77): SiteController->renderFile()
+#2 /Users/Pavel/Work/Yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#3 /Users/Pavel/Work/Yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#4 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(207): CContentDecorator->run()
+#5 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(301): SiteController->endWidget()
+#6 /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(127): require()
+#8 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#9 /Users/Pavel/Work/Yii/framework/web/CController.php(785): SiteController->renderFile()
+#10 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#12 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#13 /Users/Pavel/Work/Yii/framework/web/CController.php(287): SiteController->runAction()
+#14 /Users/Pavel/Work/Yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#15 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): SiteController->run()
+#16 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#17 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/layouts/main.php (51)
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/layouts/column1.php (6)
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/SiteController.php (32)
+2012/08/29 15:36:04 [error] [php] Object of class Users could not be converted to string (/Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php:20)
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CController.php(870): UsersController->renderFile()
+#1 /Users/Pavel/Work/Yii/framework/web/CController.php(783): UsersController->renderPartial()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): UsersController->render()
+#3 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#4 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#6 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): UsersController->filterAccessControl()
+#9 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /Users/Pavel/Work/Yii/framework/web/CController.php(266): UsersController->runActionWithFilters()
+#12 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): UsersController->run()
+#13 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#14 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php (20)
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php (128)
+in /Users/Pavel/Work/PHP/skladblag.local/www/index.php (13)
+2012/08/29 15:36:48 [error] [php] Object of class Users could not be converted to string (/Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php:20)
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CController.php(870): UsersController->renderFile()
+#1 /Users/Pavel/Work/Yii/framework/web/CController.php(783): UsersController->renderPartial()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): UsersController->render()
+#3 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#4 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#6 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): UsersController->filterAccessControl()
+#9 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /Users/Pavel/Work/Yii/framework/web/CController.php(266): UsersController->runActionWithFilters()
+#12 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): UsersController->run()
+#13 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#14 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php (20)
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php (128)
+in /Users/Pavel/Work/PHP/skladblag.local/www/index.php (13)
+2012/08/29 15:37:00 [error] [php] Object of class Users could not be converted to string (/Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php:20)
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CController.php(870): UsersController->renderFile()
+#1 /Users/Pavel/Work/Yii/framework/web/CController.php(783): UsersController->renderPartial()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): UsersController->render()
+#3 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#4 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#6 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): UsersController->filterAccessControl()
+#9 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /Users/Pavel/Work/Yii/framework/web/CController.php(266): UsersController->runActionWithFilters()
+#12 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): UsersController->run()
+#13 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#14 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php (20)
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php (128)
+in /Users/Pavel/Work/PHP/skladblag.local/www/index.php (13)
+2012/08/29 15:37:41 [error] [exception.CException] exception 'CException' with message 'Property "Users.0" is not defined.' in /Users/Pavel/Work/Yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('0')
+#1 /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php(20): CActiveRecord->__get('0')
+#2 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(127): require('/Users/Pavel/Wo...')
+#3 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/Pavel/Wo...', Array, true)
+#4 /Users/Pavel/Work/Yii/framework/web/CController.php(870): CBaseController->renderFile('/Users/Pavel/Wo...', Array, true)
+#5 /Users/Pavel/Work/Yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#6 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#7 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#8 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/Pavel/Work/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): CController->run('')
+#17 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('users')
+#18 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/users
+---
+2012/08/29 15:38:31 [error] [php] Object of class Devices could not be converted to string (/Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php:20)
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CController.php(870): UsersController->renderFile()
+#1 /Users/Pavel/Work/Yii/framework/web/CController.php(783): UsersController->renderPartial()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): UsersController->render()
+#3 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#4 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#6 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): UsersController->filterAccessControl()
+#9 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /Users/Pavel/Work/Yii/framework/web/CController.php(266): UsersController->runActionWithFilters()
+#12 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): UsersController->run()
+#13 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#14 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php (20)
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php (128)
+in /Users/Pavel/Work/PHP/skladblag.local/www/index.php (13)
+2012/08/29 16:05:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mor/users`, CONSTRAINT `fk_users_lcrs` FOREIGN KEY (`lcr_id`) REFERENCES `lcrs` (`id`)). The SQL statement executed was: INSERT INTO `users` (`usertype`, `logged`, `calltime_normative`, `show_in_realtime_stats`, `balance`, `frozen_balance`, `lcr_id`, `postpaid`, `blocked`, `tariff_id`, `month_plan_perc`, `month_plan_updated`, `sales_this_month`, `sales_this_month_planned`, `show_billing_info`, `primary_device_id`, `credit`, `vat_percent`, `owner_id`, `hidden`, `allow_loss_calls`, `vouchers_disabled_till`, `c2c_service_active`, `send_invoice_types`, `call_limit`, `sms_service_active`, `cyberplat_active`, `call_center_agent`, `generate_invoice`, `tax_1`, `tax_2`, `tax_3`, `tax_4`, `block_at`, `block_at_conditional`, `block_conditional_use`, `recording_enabled`, `recording_forced_enabled`, `recording_hdd_quota`, `warning_email_active`, `warning_email_balance`, `warning_email_sent`, `tax_id`, `invoice_zero_calls`, `acc_group_id`, `hide_destination_end`, `warning_email_hour`, `warning_balance_call`, `warning_balance_sound_file_id`, `own_providers`, `ignore_global_monitorings`, `currency_id`, `quickforwards_rule_id`, `spy_device_id`, `time_zone`, `minimal_charge`, `webphone_allow_use`, `webphone_device_id`, `username`, `password`, `first_name`, `last_name`, `clientid`, `agreement_number`, `agreement_date`, `language`, `taxation_country`, `vat_number`, `address_id`, `accounting_number`, `uniquehash`, `temporary_id`, `c2c_call_price`, `sms_tariff_id`, `sms_lcr_id`, `recordings_email`, `minimal_charge_start_at`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29, :yp30, :yp31, :yp32, :yp33, :yp34, :yp35, :yp36, :yp37, :yp38, :yp39, :yp40, :yp41, :yp42, :yp43, :yp44, :yp45, :yp46, :yp47, :yp48, :yp49, :yp50, :yp51, :yp52, :yp53, :yp54, :yp55, :yp56, :yp57, :yp58, :yp59, :yp60, :yp61, :yp62, :yp63, :yp64, :yp65, :yp66, :yp67, :yp68, :yp69, :yp70, :yp71, :yp72, :yp73, :yp74, :yp75, :yp76).
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php (73)
+in /Users/Pavel/Work/PHP/skladblag.local/www/index.php (13)
+2012/08/29 16:05:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mor/users`, CONSTRAINT `fk_users_lcrs` FOREIGN KEY (`lcr_id`) REFERENCES `lcrs` (`id`)). The SQL statement executed was: INSERT INTO `users` (`usertype`, `logged`, `calltime_normative`, `show_in_realtime_stats`, `balance`, `frozen_balance`, `lcr_id`, `postpaid`, `blocked`, `tariff_id`, `month_plan_perc`, `month_plan_updated`, `sales_this_month`, `sales_this_month_planned`, `show_billing_info`, `primary_device_id`, `credit`, `vat_percent`, `owner_id`, `hidden`, `allow_loss_calls`, `vouchers_disabled_till`, `c2c_service_active`, `send_invoice_types`, `call_limit`, `sms_service_active`, `cyberplat_active`, `call_center_agent`, `generate_invoice`, `tax_1`, `tax_2`, `tax_3`, `tax_4`, `block_at`, `block_at_conditional`, `block_conditional_use`, `recording_enabled`, `recording_forced_enabled`, `recording_hdd_quota`, `warning_email_active`, `warning_email_balance`, `warning_email_sent`, `tax_id`, `invoice_zero_calls`, `acc_group_id`, `hide_destination_end`, `warning_email_hour`, `warning_balance_call`, `warning_balance_sound_file_id`, `own_providers`, `ignore_global_monitorings`, `currency_id`, `quickforwards_rule_id`, `spy_device_id`, `time_zone`, `minimal_charge`, `webphone_allow_use`, `webphone_device_id`, `username`, `password`, `first_name`, `last_name`, `clientid`, `agreement_number`, `agreement_date`, `language`, `taxation_country`, `vat_number`, `address_id`, `accounting_number`, `uniquehash`, `temporary_id`, `c2c_call_price`, `sms_tariff_id`, `sms_lcr_id`, `recordings_email`, `minimal_charge_start_at`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29, :yp30, :yp31, :yp32, :yp33, :yp34, :yp35, :yp36, :yp37, :yp38, :yp39, :yp40, :yp41, :yp42, :yp43, :yp44, :yp45, :yp46, :yp47, :yp48, :yp49, :yp50, :yp51, :yp52, :yp53, :yp54, :yp55, :yp56, :yp57, :yp58, :yp59, :yp60, :yp61, :yp62, :yp63, :yp64, :yp65, :yp66, :yp67, :yp68, :yp69, :yp70, :yp71, :yp72, :yp73, :yp74, :yp75, :yp76)' in /Users/Pavel/Work/Yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(73): CActiveRecord->save()
+#3 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionCreate()
+#4 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /Users/Pavel/Work/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): CController->run('create')
+#13 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('users/create')
+#14 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/users/create
+HTTP_REFERER=http://yii.local/index.php/users/create
+---
+2012/08/30 18:21:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mor/devicegroups`, CONSTRAINT `FK_devicegroups_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)). The SQL statement executed was: INSERT INTO `devicegroups` (`primary`, `user_id`, `address_id`, `name`, `added`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php (98)
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php (128)
+in /Users/Pavel/Work/PHP/skladblag.local/www/index.php (13)
+2012/08/30 18:21:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mor/devicegroups`, CONSTRAINT `FK_devicegroups_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)). The SQL statement executed was: INSERT INTO `devicegroups` (`primary`, `user_id`, `address_id`, `name`, `added`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in /Users/Pavel/Work/Yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php(98): CActiveRecord->save()
+#3 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(127): require('/Users/Pavel/Wo...')
+#4 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/Pavel/Wo...', Array, true)
+#5 /Users/Pavel/Work/Yii/framework/web/CController.php(870): CBaseController->renderFile('/Users/Pavel/Wo...', Array, true)
+#6 /Users/Pavel/Work/Yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#7 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#8 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#9 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#16 /Users/Pavel/Work/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): CController->run('index')
+#18 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('users/index')
+#19 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/users/index
+HTTP_REFERER=http://yii.local/index.php/users/create
+---
+2012/08/30 18:24:04 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mor/devicegroups`, CONSTRAINT `FK_devicegroups_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)). The SQL statement executed was: INSERT INTO `devicegroups` (`primary`, `user_id`, `address_id`, `name`, `added`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php (98)
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php (128)
+in /Users/Pavel/Work/PHP/skladblag.local/www/index.php (13)
+2012/08/30 18:24:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`mor/devicegroups`, CONSTRAINT `FK_devicegroups_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)). The SQL statement executed was: INSERT INTO `devicegroups` (`primary`, `user_id`, `address_id`, `name`, `added`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in /Users/Pavel/Work/Yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php(98): CActiveRecord->save()
+#3 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(127): require('/Users/Pavel/Wo...')
+#4 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/Pavel/Wo...', Array, true)
+#5 /Users/Pavel/Work/Yii/framework/web/CController.php(870): CBaseController->renderFile('/Users/Pavel/Wo...', Array, true)
+#6 /Users/Pavel/Work/Yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#7 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#8 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#9 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#16 /Users/Pavel/Work/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): CController->run('index')
+#18 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('users/index')
+#19 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/users/index
+HTTP_REFERER=http://yii.local/index.php/users/create
+---
+2012/08/30 18:28:53 [error] [exception.CException] exception 'CException' with message 'Property "Devices.name_max" is not defined.' in /Users/Pavel/Work/Yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name_max')
+#1 /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php(105): CActiveRecord->__get('name_max')
+#2 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(127): require('/Users/Pavel/Wo...')
+#3 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/Pavel/Wo...', Array, true)
+#4 /Users/Pavel/Work/Yii/framework/web/CController.php(870): CBaseController->renderFile('/Users/Pavel/Wo...', Array, true)
+#5 /Users/Pavel/Work/Yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#6 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#7 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#8 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/Pavel/Work/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): CController->run('index')
+#17 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('users/index')
+#18 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/users/index
+HTTP_REFERER=http://yii.local/index.php/users/create
+---
+2012/08/30 18:33:18 [error] [exception.CException] exception 'CException' with message 'Property "Devices.name_max" is not defined.' in /Users/Pavel/Work/Yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name_max')
+#1 /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php(106): CActiveRecord->__get('name_max')
+#2 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(127): require('/Users/Pavel/Wo...')
+#3 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/Pavel/Wo...', Array, true)
+#4 /Users/Pavel/Work/Yii/framework/web/CController.php(870): CBaseController->renderFile('/Users/Pavel/Wo...', Array, true)
+#5 /Users/Pavel/Work/Yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#6 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#7 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#8 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/Pavel/Work/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): CController->run('index')
+#17 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('users/index')
+#18 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/users/index
+HTTP_REFERER=http://yii.local/index.php/users/create
+---
+2012/08/30 18:39:05 [error] [exception.CException] exception 'CException' with message 'Property "Devices.name_max" is not defined.' in /Users/Pavel/Work/Yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name_max')
+#1 /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php(106): CActiveRecord->__get('name_max')
+#2 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(127): require('/Users/Pavel/Wo...')
+#3 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/Pavel/Wo...', Array, true)
+#4 /Users/Pavel/Work/Yii/framework/web/CController.php(870): CBaseController->renderFile('/Users/Pavel/Wo...', Array, true)
+#5 /Users/Pavel/Work/Yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#6 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#7 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#8 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/Pavel/Work/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): CController->run('index')
+#17 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('users/index')
+#18 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/users/index
+HTTP_REFERER=http://yii.local/index.php/users/create
+---
+2012/08/30 18:42:45 [error] [exception.CException] exception 'CException' with message 'Property "Devices.name_max" is not defined.' in /Users/Pavel/Work/Yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name_max')
+#1 /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php(106): CActiveRecord->__get('name_max')
+#2 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(127): require('/Users/Pavel/Wo...')
+#3 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/Pavel/Wo...', Array, true)
+#4 /Users/Pavel/Work/Yii/framework/web/CController.php(870): CBaseController->renderFile('/Users/Pavel/Wo...', Array, true)
+#5 /Users/Pavel/Work/Yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#6 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#7 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#8 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/Pavel/Work/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): CController->run('index')
+#17 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('users/index')
+#18 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/users/index
+HTTP_REFERER=http://yii.local/index.php/users/create
+---
+2012/08/30 18:53:23 [error] [exception.CException] exception 'CException' with message 'Property "Devices.name_max" is not defined.' in /Users/Pavel/Work/Yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name_max')
+#1 /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php(111): CActiveRecord->__get('name_max')
+#2 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(127): require('/Users/Pavel/Wo...')
+#3 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/Pavel/Wo...', Array, true)
+#4 /Users/Pavel/Work/Yii/framework/web/CController.php(870): CBaseController->renderFile('/Users/Pavel/Wo...', Array, true)
+#5 /Users/Pavel/Work/Yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#6 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#7 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#8 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/Pavel/Work/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): CController->run('index')
+#17 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('users/index')
+#18 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/users/index
+HTTP_REFERER=http://yii.local/index.php/users/create
+---
+2012/08/30 18:54:37 [error] [exception.CException] exception 'CException' with message 'Property "Devices.name_max" is not defined.' in /Users/Pavel/Work/Yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name_max')
+#1 /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php(111): CActiveRecord->__get('name_max')
+#2 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(127): require('/Users/Pavel/Wo...')
+#3 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/Pavel/Wo...', Array, true)
+#4 /Users/Pavel/Work/Yii/framework/web/CController.php(870): CBaseController->renderFile('/Users/Pavel/Wo...', Array, true)
+#5 /Users/Pavel/Work/Yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#6 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#7 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#8 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /Users/Pavel/Work/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): CController->run('index')
+#17 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('users/index')
+#18 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/users/index
+HTTP_REFERER=http://yii.local/index.php/users/create
+---
+2012/08/30 19:00:34 [error] [exception.CException] exception 'CException' with message 'Property "Devices.name_max" is not defined.' in /Users/Pavel/Work/Yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name_max')
+#1 /Users/Pavel/Work/Yii/framework/base/CModel.php(593): CActiveRecord->__get('name_max')
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php(111): CModel->offsetGet('name_max')
+#3 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(127): require('/Users/Pavel/Wo...')
+#4 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/Pavel/Wo...', Array, true)
+#5 /Users/Pavel/Work/Yii/framework/web/CController.php(870): CBaseController->renderFile('/Users/Pavel/Wo...', Array, true)
+#6 /Users/Pavel/Work/Yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#7 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#8 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#9 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#16 /Users/Pavel/Work/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): CController->run('index')
+#18 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('users/index')
+#19 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/users/index
+HTTP_REFERER=http://yii.local/index.php/users/create
+---
+2012/08/30 19:00:54 [error] [exception.CException] exception 'CException' with message 'Property "Devices.name_max" is not defined.' in /Users/Pavel/Work/Yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name_max')
+#1 /Users/Pavel/Work/Yii/framework/base/CModel.php(593): CActiveRecord->__get('name_max')
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php(112): CModel->offsetGet('name_max')
+#3 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(127): require('/Users/Pavel/Wo...')
+#4 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/Pavel/Wo...', Array, true)
+#5 /Users/Pavel/Work/Yii/framework/web/CController.php(870): CBaseController->renderFile('/Users/Pavel/Wo...', Array, true)
+#6 /Users/Pavel/Work/Yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#7 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#8 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#9 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#16 /Users/Pavel/Work/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): CController->run('index')
+#18 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('users/index')
+#19 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/users/index
+HTTP_REFERER=http://yii.local/index.php/users/create
+---
+2012/08/30 19:09:29 [error] [exception.CException] exception 'CException' with message 'Property "Devices.name_max" is not defined.' in /Users/Pavel/Work/Yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name_max')
+#1 /Users/Pavel/Work/Yii/framework/base/CModel.php(593): CActiveRecord->__get('name_max')
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php(114): CModel->offsetGet('name_max')
+#3 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(127): require('/Users/Pavel/Wo...')
+#4 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/Pavel/Wo...', Array, true)
+#5 /Users/Pavel/Work/Yii/framework/web/CController.php(870): CBaseController->renderFile('/Users/Pavel/Wo...', Array, true)
+#6 /Users/Pavel/Work/Yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#7 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#8 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#9 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#16 /Users/Pavel/Work/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): CController->run('index')
+#18 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('users/index')
+#19 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/users/index
+HTTP_REFERER=http://yii.local/index.php/users/create
+---
+2012/08/30 19:12:01 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'context=mor_local' at line 1. The SQL statement executed was: context=mor_local.
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php (106)
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php (128)
+in /Users/Pavel/Work/PHP/skladblag.local/www/index.php (13)
+2012/08/30 19:12:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'context=mor_local' at line 1. The SQL statement executed was: context=mor_local' in /Users/Pavel/Work/Yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/db/CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(1498): CDbCommand->queryRow()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php(106): CActiveRecord->findBySql('context=mor_loc...')
+#3 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(127): require('/Users/Pavel/Wo...')
+#4 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/Pavel/Wo...', Array, true)
+#5 /Users/Pavel/Work/Yii/framework/web/CController.php(870): CBaseController->renderFile('/Users/Pavel/Wo...', Array, true)
+#6 /Users/Pavel/Work/Yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#7 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#8 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#9 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#16 /Users/Pavel/Work/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): CController->run('index')
+#18 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('users/index')
+#19 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/users/index
+HTTP_REFERER=http://yii.local/index.php/users/create
+---
+2012/08/30 19:14:10 [error] [php] mysql_fetch_array() expects parameter 1 to be resource, boolean given (/Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php:108)
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): UsersController->renderInternal()
+#1 /Users/Pavel/Work/Yii/framework/web/CController.php(870): UsersController->renderFile()
+#2 /Users/Pavel/Work/Yii/framework/web/CController.php(783): UsersController->renderPartial()
+#3 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): UsersController->render()
+#4 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#5 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): UsersController->runAction()
+#7 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#9 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): UsersController->filterAccessControl()
+#10 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#11 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /Users/Pavel/Work/Yii/framework/web/CController.php(266): UsersController->runActionWithFilters()
+#13 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): UsersController->run()
+#14 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#15 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users/index
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php (108)
+in /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php (128)
+in /Users/Pavel/Work/PHP/skladblag.local/www/index.php (13)
+2012/08/30 19:18:18 [error] [exception.CException] exception 'CException' with message 'Property "CDbCommand.name_max" is not defined.' in /Users/Pavel/Work/Yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /Users/Pavel/Work/PHP/skladblag.local/www/protected/views/users/index.php(112): CComponent->__get('name_max')
+#1 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(127): require('/Users/Pavel/Wo...')
+#2 /Users/Pavel/Work/Yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Users/Pavel/Wo...', Array, true)
+#3 /Users/Pavel/Work/Yii/framework/web/CController.php(870): CBaseController->renderFile('/Users/Pavel/Wo...', Array, true)
+#4 /Users/Pavel/Work/Yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#5 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#6 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): UsersController->actionIndex()
+#7 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /Users/Pavel/Work/Yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /Users/Pavel/Work/Yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 /Users/Pavel/Work/Yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /Users/Pavel/Work/Yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /Users/Pavel/Work/Yii/framework/web/CController.php(292): CFilterChain->run()
+#14 /Users/Pavel/Work/Yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): CController->run('index')
+#16 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('users/index')
+#17 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php/users/index
+HTTP_REFERER=http://yii.local/index.php/users/create
+---
+2012/09/03 18:04:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/03 18:04:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/03 18:04:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/03 18:04:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/03 18:05:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/03 19:11:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/03 19:11:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/03 20:08:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/06 14:14:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/06 14:14:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
