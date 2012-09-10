@@ -101,6 +101,7 @@
  * @property Users $owner
  * @property Users[] $users
  * @property Vouchers[] $vouchers
+ * @property UsersHash[] $usersHashes
  */
 class Users extends CActiveRecord
 {
@@ -170,6 +171,7 @@ class Users extends CActiveRecord
 			'owner' => array(self::BELONGS_TO, 'Users', 'owner_id'),
 			'users' => array(self::HAS_MANY, 'Users', 'owner_id'),
 			'vouchers' => array(self::HAS_MANY, 'Vouchers', 'user_id'),
+                                                'usersHashes' => array(self::HAS_MANY, 'UsersHash', 'user_id'),
 		);
 	}
 

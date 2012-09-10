@@ -3,24 +3,68 @@
 class Starsfon {
     
     protected $error = array();
-
-
-    public static function userExists($login = null)
+    
+    protected static $instance = null;
+    
+    private static $access_method = array(
+        'getProfile' => array(
+            'auth' => TRUE
+        ),
+        'createUser' => array(
+            'auth' => FALSE
+        ),
+        'userExists' => array(
+            'auth' => FALSE
+        ),
+    );
+    
+    public $isAuth = null;
+    
+    public static function instance($method)
     {
-        $user = Users::model()->findByAttributes(array('username' => $login));
-        if($user === null)
+        if(is_null(self::$instance))
         {
-            return true;
-        }else{
-            return false;
+            self::$instance = new Starsfon($method);
+        }
+        return self::$instance;
+    }
+
+    private function __construct($method) {
+        if(array_key_exists($method, self::$access_method))
+        {
+            $this->isAuth = self::$access_method[$method]['auth'];
         }
     }
 
-    public static function createUser($params = array())
+    public  function userExists($params = array())
+    {
+        if(array_key_exists('login', $params))
+        {
+            $user = Users::model()->findByAttributes(array('username' => $params['login']));
+            if($user === null)
+            {
+                $result = array(
+                        'response' => 0
+                    );
+            }else{
+                $result = array(
+                        'response' => 1
+                    );
+            }
+        }else{
+            $result = array(
+                'error' => 'Params not exists'
+            );
+        }
+        
+        return json_encode($result);
+    }
+
+    public  function createUser($params = array())
     {
         if(empty($params['password']) || empty($params['login']))
         {
-            return array(
+            $this->error[] = array(
                 'error' => 'No Params'
             );
         }else{
@@ -29,7 +73,7 @@ class Starsfon {
             $adress->direction_id = '177';
             if(!$adress->save())
             {
-                $this->error[] = $adress->getErrors();
+                $this->error['Addresses'][] = $adress->getErrors();
             }
             $adress_id = Yii::app()->db->getLastInsertID();
 
@@ -40,7 +84,7 @@ class Starsfon {
             $tax->compound_tax = '1';
             if(!$tax->save())
             {
-                $this->error[] = $tax->getErrors();
+                $this->error['Taxes'][] = $tax->getErrors();
             }
             $tax_id = Yii::app()->db->getLastInsertID();
 
@@ -104,7 +148,7 @@ class Starsfon {
             $user->quickforwards_rule_id = 0;
             if(!$user->save())
             {
-                $this->error[] = $user->getErrors();
+                $this->error['Users'][] = $user->getErrors();
             }
             $user_id = Yii::app()->db->getLastInsertID();
             
@@ -116,7 +160,7 @@ class Starsfon {
             $dg->primary = 1;
             if(!$dg->save())
             {
-                $this->error[] = $dg->getErrors();
+                $this->error['DeviceGroups'][] = $dg->getErrors();
             }
             $dg_id = Yii::app()->db->getLastInsertID();
             
@@ -184,7 +228,7 @@ class Starsfon {
             $dv->save();
             if(!$dv->save())
             {
-                $this->error[] = $dv->getErrors();
+                $this->error['Devices'][] = $dv->getErrors();
             }
 
             $dv_id = Yii::app()->db->getLastInsertID();
@@ -209,7 +253,7 @@ class Starsfon {
             $did->save();
             if(!$did->save())
             {
-                $this->error[] = $did->getErrors();
+                $this->error['Dids'][] = $did->getErrors();
             }
 
             $did_id = Yii::app()->db->getLastInsertID();
@@ -218,7 +262,7 @@ class Starsfon {
             $dv->save();
             if(!$dv->save())
             {
-                $this->error[] = $dv->getErrors();
+                $this->error['Devices 2'][] = $dv->getErrors();
             }
 
             $didr = new Didrates;
@@ -233,7 +277,7 @@ class Starsfon {
             $didr->save();
             if(!$didr->save())
             {
-                $this->error[] = $didr->getErrors();
+                $this->error['Didrates'][] = $didr->getErrors();
             }
             unset($didr);
             $didr = new Didrates;
@@ -248,7 +292,7 @@ class Starsfon {
             $didr->save();
             if(!$didr->save())
             {
-                $this->error[] = $didr->getErrors();
+                $this->error['Didrates2'][]  = $didr->getErrors();
             }
             unset($didr);
             $didr = new Didrates;
@@ -263,7 +307,7 @@ class Starsfon {
             $didr->save();
             if(!$didr->save())
             {
-                $this->error[] = $didr->getErrors();
+                $this->error['Didrates3'][]  = $didr->getErrors();
             }
             unset($didr);
 
@@ -274,7 +318,7 @@ class Starsfon {
             $devcod->save();
             if(!$devcod->save())
             {
-                $this->error[] = $devcod->getErrors();
+                $this->error['Devicecodecs'][]  = $devcod->getErrors();
             }
             unset($devcod);
             $devcod = new Devicecodecs;
@@ -284,7 +328,7 @@ class Starsfon {
             $devcod->save();
             if(!$devcod->save())
             {
-                $this->error[] = $devcod->getErrors();
+                $this->error['Devicecodecs2'][] = $devcod->getErrors();
             }
             unset($devcod);
             $devcod = new Devicecodecs;
@@ -294,17 +338,37 @@ class Starsfon {
             $devcod->save();
             if(!$devcod->save())
             {
-                $this->error[] = $devcod->getErrors();
+                $this->error['Devicecodecs3'][] = $devcod->getErrors();
             }
             unset($devcod);
             
             if(empty($this->error))
             {
-                return true;
+                
+                return $this->getProfile($params);
             }else{
-                return false;
+                return json_encode($this->error);
             }
         }
+    }
+    
+    public function getProfile($params = array())
+    {
+        $user = Users::model()->findByAttributes(array('username' => $params['login']));
+        if($user === null)
+        {
+            $result = array('error' => 'Пользователь с таким логином ненайден');
+        }else{
+            //$user = new Users;
+            $result = array(
+                'user_id' => $user->id,
+                'login' => $user->username,
+                'balanc' => $user->balance,
+                'number' => $user->primaryDevice->primaryDid->did,
+            );
+        }
+        
+        return json_encode($result);
     }
     
 }
