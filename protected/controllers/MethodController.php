@@ -43,9 +43,9 @@ class MethodController extends Controller
                     MAX(`accountcode`) + 1 as `accountcode_max` 
                 FROM `devices` WHERE `context` = 'mor_local';";
 
-            $max = Yii::app()->db->createCommand($query_devi)->execute();
-            
-            echo $max->name_max;
+            $max = Yii::app()->db->createCommand($query_devi)->queryAll();
+            echo $max[0]['name_max'];
+            print_r($max);
     }
 
     // Uncomment the following methods and override them if needed

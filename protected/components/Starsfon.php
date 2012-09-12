@@ -169,20 +169,20 @@ class Starsfon {
                     MAX(`accountcode`) + 1 as `accountcode_max` 
                 FROM `devices` WHERE `context` = 'mor_local';";
 
-            $max = Yii::app()->db->createCommand($query_devi)->execute();
+            $max = Yii::app()->db->createCommand($query_devi)->queryAll();
 
             $dv = new Devices;
-            $dv->name = $max->name_max;
+            $dv->name = $max[0]['name_max'];
             $dv->host = 'dynamic';
             $dv->secret = $params['password'];
             $dv->context = 'mor_local';
             $dv->port = '5060';
-            $dv->accountcode = $max->accountcode_max;
+            $dv->accountcode = $max[0]['accountcode_max'];
             $dv->regseconds = 0;
-            $dv->callerid = '<'. $max->name_max .'>';
-            $dv->extension = $max->name_max;
+            $dv->callerid = '<'. $max[0]['name_max'] .'>';
+            $dv->extension = $max[0]['name_max'];
             $dv->voicemail_active = 0;
-            $dv->username = $max->name_max;
+            $dv->username = $max[0]['name_max'];
             $dv->device_type = 'SIP';
             $dv->user_id = $user_id;
             $dv->works_not_logged = 1;
@@ -225,15 +225,20 @@ class Starsfon {
             $dv->requirecalltoken = 'no';
             $dv->language = 'en';
             $dv->primary_did_id = 1;
-            $dv->save();
+            //$dv->save();
             if(!$dv->save())
             {
                 $this->error['Devices'][] = $dv->getErrors();
             }
 
             $dv_id = Yii::app()->db->getLastInsertID();
-
-            $new_did = round(10000000 + $new_devi);
+            $user->primary_device_id = $dv_id;
+            if(!$user->save())
+            {
+                $this->error['Users2'][] = $user->getErrors();
+            }
+            
+            $new_did = round(10000000 + $max[0]['name_max']);
 
             $did = new Dids;
             $did->did = $new_did;
@@ -250,16 +255,16 @@ class Starsfon {
             $did->grace_time = 0;
             $did->t_digit = 10;
             $did->t_response = 20;
-            $did->save();
+            //$did->save();
             if(!$did->save())
             {
                 $this->error['Dids'][] = $did->getErrors();
             }
 
             $did_id = Yii::app()->db->getLastInsertID();
-
+            
+            //$dv2 = Devices::model()->findByAttributes(array('username' => $params['login']));
             $dv->primary_did_id = $did_id;
-            $dv->save();
             if(!$dv->save())
             {
                 $this->error['Devices 2'][] = $dv->getErrors();
@@ -274,7 +279,7 @@ class Starsfon {
             $didr->min_time = 0;
             $didr->did_id = $did_id;
             $didr->rate_type = 'provider';
-            $didr->save();
+            //$didr->save();
             if(!$didr->save())
             {
                 $this->error['Didrates'][] = $didr->getErrors();
@@ -289,7 +294,7 @@ class Starsfon {
             $didr->min_time = 0;
             $didr->did_id = $did_id;
             $didr->rate_type = 'owner';
-            $didr->save();
+            //$didr->save();
             if(!$didr->save())
             {
                 $this->error['Didrates2'][]  = $didr->getErrors();
@@ -304,7 +309,7 @@ class Starsfon {
             $didr->min_time = 0;
             $didr->did_id = $did_id;
             $didr->rate_type = 'incoming';
-            $didr->save();
+            //$didr->save();
             if(!$didr->save())
             {
                 $this->error['Didrates3'][]  = $didr->getErrors();
@@ -315,7 +320,7 @@ class Starsfon {
             $devcod->device_id = $dv_id;
             $devcod->codec_id = 1;
             $devcod->priority = 0;
-            $devcod->save();
+            //$devcod->save();
             if(!$devcod->save())
             {
                 $this->error['Devicecodecs'][]  = $devcod->getErrors();
@@ -325,7 +330,7 @@ class Starsfon {
             $devcod->device_id = $dv_id;
             $devcod->codec_id = 2;
             $devcod->priority = 2;
-            $devcod->save();
+            //$devcod->save();
             if(!$devcod->save())
             {
                 $this->error['Devicecodecs2'][] = $devcod->getErrors();
@@ -335,7 +340,7 @@ class Starsfon {
             $devcod->device_id = $dv_id;
             $devcod->codec_id = 5;
             $devcod->priority = 0;
-            $devcod->save();
+            //$devcod->save();
             if(!$devcod->save())
             {
                 $this->error['Devicecodecs3'][] = $devcod->getErrors();

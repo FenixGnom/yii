@@ -755,3 +755,113 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2012/09/11 18:07:39 [error] [php] PDOStatement::execute() [<a href='pdostatement.execute'>pdostatement.execute</a>]: MySQL server has gone away (/Users/Pavel/Work/Yii/framework/db/CDbCommand.php:334)
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/db/ar/CActiveRecord.php(796): Users->insert()
+#1 /Users/Pavel/Work/PHP/skladblag.local/www/protected/components/Starsfon.php(149): Users->save()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/protected/controllers/MethodController.php(30): Starsfon->createUser()
+#3 /Users/Pavel/Work/Yii/framework/web/actions/CInlineAction.php(50): MethodController->actionIndex()
+#4 /Users/Pavel/Work/Yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Users/Pavel/Work/Yii/framework/web/CController.php(287): MethodController->runAction()
+#6 /Users/Pavel/Work/Yii/framework/web/CController.php(266): MethodController->runActionWithFilters()
+#7 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(283): MethodController->run()
+#8 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CWebApplication->run()
+REQUEST_URI=/method
+2012/09/11 20:40:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/11 20:42:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/11 20:43:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/11 20:44:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/11 20:44:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/11 20:44:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/11 20:46:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/11 20:46:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/11 20:47:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/11 20:47:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/11 20:48:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/09/11 20:49:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /Users/Pavel/Work/Yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Users/Pavel/Work/Yii/framework/web/CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 /Users/Pavel/Work/Yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Users/Pavel/Work/PHP/skladblag.local/www/index.php(27): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
