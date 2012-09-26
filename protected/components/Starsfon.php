@@ -364,16 +364,22 @@ class Starsfon {
         {
             $result = array('error' => 'Пользователь с таким логином ненайден');
         }else{
-            //$user = new Users;
+            $user = new Users;
             $result = array(
                 'user_id' => $user->id,
                 'login' => $user->username,
                 'balanc' => $user->balance,
-                'number' => $user->primaryDevice->primaryDid->did,
+                'phone_display' => $user->primaryDevice->primaryDid->did,
+                'phone_ast' => $user->primaryDevice->name,
             );
         }
         
         return json_encode($result);
+    }
+
+    public function login()
+    {
+        //
     }
     
 }

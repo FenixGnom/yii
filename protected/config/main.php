@@ -88,5 +88,8 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+        'proxy' => '78.41.28.179',
+        'server' => '78.41.28.179',
+        'rtm_url' => 'rtmp://78.41.28.179/sip'
 	),
 );
